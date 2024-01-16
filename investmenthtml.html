@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="investmentcss.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investment Calculator</title>
+</head>
+<body>
+<h1>Investment Calculator</h1>
+<form>
+  <label for="startValue">Starting Value:</label>
+  <input type="number" id="startValue" required>
+  <label for="annualReturn">Annual Return (%):</label>
+  <input type="number" id="annualReturn" required>
+  <label for="investmentLength">Investment Length (years):</label>
+  <input type="number" id="investmentLength" required>
+  <label for="monthlyContribution">Monthly Contribution:</label>
+  <input type="number" id="monthlyContribution" required>
+  <button type="button" onclick="calculateReturn()">Calculate</button>
+</form>
+<p id="result">Estimated Return: $0</p>
+<script src="investment.js"></script>
+</body>
+</html>
